@@ -1,1 +1,1 @@
-# userstyles
+This repository is intended to contains userscripts / styles for various websites

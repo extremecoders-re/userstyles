@@ -1,0 +1,109 @@
+/*
+@desc: Userstyle for Stylish for mimicking old look and feel
+@url: https://forum.tuts4you.com/
+*/
+
+
+/* 
+Scale down all fonts used 
+*/
+body {
+	font-size: 70% !important;
+}
+
+
+/*
+Make all avatar images square edged
+*/
+.ipsUserPhoto_tiny img,
+img.ipsUserPhoto_tiny,
+.ipsUserPhoto_tiny:after {
+	width: 34px;
+	height: 34px;
+	border-radius: 0px;
+}
+.ipsUserPhoto_large img,
+img.ipsUserPhoto_large,
+.ipsUserPhoto_large:after {
+	width: 90px;
+	height: 90px;
+	border-radius: 0px;
+}
+
+
+/*
+Hide the create dropdown at the right top of the page
+*/
+li#cCreate {
+	display: None;
+}
+
+/*
+Hide number of replies in recent topics
+*/
+.ipsCommentCount {
+	display: None;
+}
+
+/*
+Hide number of posts counter
+*/
+.ipsDataItem_stats,
+.ipsDataItem_statsLarge {
+	display: none;
+}
+
+/*
+Increase width of right sidebar gadgets
+*/
+.ipsLayout_sidebarright {
+	min-width: 350px !important;
+	max-width: 400px !important;
+}
+
+
+.ipsDataItem_lastPoster,
+.ipsDataItem_withPhoto {
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+}
+
+
+.ipsDataItem_main {
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+}
+
+
+.ipsType_sectionTitle,
+.ipsWidget_title,
+.ipsType_reset {
+	padding: 5px 5px 5px 5px !important;
+}
+
+
+.ipsItemStatus.ipsItemStatus_large {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	border-radius: 10px;
+	font-size: 9px;
+}
+
+
+.ipsDataItem {
+	border-top: 0px;
+	border-right: 0px;
+	border-left: 0px;
+	border-bottom: 0px;
+}
+
+
+.ipsType_large,
+.ipsType_pageTitle {
+	font-size: 120%;
+}
