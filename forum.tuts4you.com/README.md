@@ -5,8 +5,8 @@ Userstyle for [Stylish](https://chrome.google.com/webstore/detail/stylish/fjnbnp
 
 #### Before
 
-![Before](/before.png?raw=true)
+![Before](before.png?raw=true)
 
 #### After
 
-![After](/after.png?raw=true)
+![After](after.png?raw=true)
