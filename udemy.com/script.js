@@ -26,11 +26,17 @@
             var pageUrl = document.URL;
 
             if (title.endsWith(" | Udemy")) {
-                title = title.slice(0, title.indexOf("| Udemy") - 1);
+                title = title.slice(0, title.indexOf(" | Udemy"));
             }
 
-            var mdText = `[${title}](${pageUrl})`;
-            navigator.clipboard.writeText(mdText);
+
+            var videoContentLength = document.querySelector("[data-purpose='video-content-length']").innerText;
+            if (videoContentLength.endsWith(" on-demand video")) {
+                videoContentLength = videoContentLength.slice(0, videoContentLength.indexOf(" on-demand video"));;
+            }
+
+            var pastedText = `[${title}](${pageUrl}) [${videoContentLength}]`;
+            navigator.clipboard.writeText(pastedText);
         };
         //purchaseSection.appendChild(document.createElement("br"));
         purchaseSection.children[0].appendChild(copyLinkBtn);
