@@ -35,7 +35,10 @@
                 videoContentLength = videoContentLength.slice(0, videoContentLength.indexOf(" on-demand video"));;
             }
 
-            var pastedText = `[${title}](${pageUrl}) [${videoContentLength}]`;
+            var videoDescription = document.querySelector("[data-purpose='lead-headline']").innerText;
+            var rating = document.querySelector("[data-purpose='rating-number']").innerText;
+
+            var pastedText = `## [${title}](${pageUrl})\n${videoDescription} [${videoContentLength}] [${rating}/5]\n<hr>`;
             navigator.clipboard.writeText(pastedText);
         };
         //purchaseSection.appendChild(document.createElement("br"));
